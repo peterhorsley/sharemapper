@@ -5,13 +5,12 @@ First, I wrote DriveMapper, which takes the pain out of mapped network drives in
 remote SMB shares locally than Windows allows, so I wrote a new tool to use symbolic links instead of mapped network drives, enabling
 an unlimited number of remote SMB shares to be mapped locally.  
 
-Usage: ShareMapper.exe [map] [add] [delete] [update-password] [set-root-folder]
+Usage: ShareMapper.exe [map] [add] [delete] [update-password]
 
 * Type `sharemapper add` to add a share to the program's config.
 * Type `sharemapper delete` to remove a share from the program's config.
 * Type `sharemapper update-password` to change the password for a share.
 * Type `sharemapper map` to create the symbolic links for all configured shares.
-* Type `sharemapper set-root-folder` to change the root folder for all symbolic links.
 
 - Passwords are stored securely in Windows Credential Manager.
 - The program will attempt to configure symbolic links to be persistent (survive reboots), however if storage of Windows credentials

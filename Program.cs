@@ -46,7 +46,7 @@ namespace ShareMapper
     {
         private static void ShowHelp(List<ShareMapping> mappings)
         {
-            Console.WriteLine("Usage: ShareMapper.exe [map] [add] [delete] [update-password] [set-root-folder]");
+            Console.WriteLine("Usage: ShareMapper.exe [map] [add] [delete] [update-password]");
             ListMappings(mappings);
         }
 
